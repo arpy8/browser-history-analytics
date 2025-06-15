@@ -76,3 +76,6 @@ def get_summary_stats(df):
         'most_active_hour': f"{most_active_hour}:00",
         'top_domain': top_domain
     }
+    
+def intro_art():
+    pass

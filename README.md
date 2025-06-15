@@ -2,16 +2,6 @@
 
 A Python package that analyzes and visualizes your browser history data with interactive charts and insights.
 
-## Usage
-Command prompt: 
-```
-pip install browser-history-analytics && browser_history_analytics
-```
-Powershell: 
-```
-pip install browser-history-analytics ; browser_history_analytics
-```
-
 ## Features
 
 - 📈 **Interactive Visualizations**: Beautiful charts showing your browsing patterns  
@@ -39,14 +29,16 @@ pip install browser-history-analytics
 ```
 
 ## Usage
-
-After installation, simply run:
-
-```bash
-browser_history_analytics
+Command prompt: 
+```
+pip install browser-history-analytics && browser_history_analytics
+```
+Powershell: 
+```
+pip install browser-history-analytics ; browser_history_analytics
 ```
 
-This will launch the Streamlit web application in your default browser.
+This will launch the web application in your default browser.
 
 ## What You'll See
 
