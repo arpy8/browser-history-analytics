@@ -31,11 +31,11 @@ pip install browser-history-analytics
 ## Usage
 Command prompt: 
 ```
-pip install browser-history-analytics && browser_history_analytics
+pip install browser-history-analytics && bha
 ```
 Powershell: 
 ```
-pip install browser-history-analytics ; browser_history_analytics
+pip install browser-history-analytics ; bha
 ```
 
 This will launch the web application in your default browser.
