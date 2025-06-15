@@ -1,11 +1,11 @@
 from setuptools import setup
 
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
     name="browser-history-analytics",
-    version="0.1.1",
+    version="0.1.2",
     author="Arpit Sengar (arpy8)",
     description="A package to visualize your browser history :D",
     long_description=long_description,
@@ -19,7 +19,8 @@ setup(
                         "seaborn", 
                         "matplotlib", 
                         "urllib3",
-                        "setuptools==66.1.1"
+                        "setuptools==66.1.1",
+                        "rich"
                     ],
     entry_points={
         "console_scripts": [

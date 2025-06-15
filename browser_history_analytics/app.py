@@ -1,9 +1,9 @@
 import streamlit as st
-from utils import (
-    generate_df, 
+from browser_history_analytics.utils import (
+    generate_df,
     get_summary_stats
 )
-from graphs import (
+from browser_history_analytics.graphs import (
     create_top_domains_chart,
     create_visits_over_time_chart,
     create_hourly_heatmap,
