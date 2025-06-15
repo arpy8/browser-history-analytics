@@ -17,7 +17,7 @@ A Python package that analyzes and visualizes your browser history data with int
 ### Option 1: Install from source
 
 ```bash
-git clone https://github.com/your-username/browser-history-analytics.git
+git clone https://github.com/arpy8/browser-history-analytics.git
 cd browser-history-analytics
 pip install -e .
 ```
