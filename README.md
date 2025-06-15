@@ -2,6 +2,16 @@
 
 A Python package that analyzes and visualizes your browser history data with interactive charts and insights.
 
+## Usage
+Command prompt: 
+```
+pip install browser-history-analytics && browser_history_analytics
+```
+Powershell: 
+```
+pip install browser-history-analytics ; browser_history_analytics
+```
+
 ## Features
 
 - 📈 **Interactive Visualizations**: Beautiful charts showing your browsing patterns  
