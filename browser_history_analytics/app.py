@@ -1,16 +1,22 @@
 import streamlit as st
-from browser_history_analytics.utils import (
-    generate_df,
-    get_summary_stats
-)
-from browser_history_analytics.graphs import (
-    create_top_domains_chart,
-    create_visits_over_time_chart,
-    create_hourly_heatmap,
-    create_category_pie_chart,
-    create_browsing_pattern_chart
-)
-from browser_history import get_history
+
+try:
+    from browser_history_analytics.utils import (
+        generate_df,
+        get_summary_stats
+    )
+    from browser_history_analytics.graphs import (
+        create_top_domains_chart,
+        create_visits_over_time_chart,
+        create_hourly_heatmap,
+        create_category_pie_chart,
+        create_browsing_pattern_chart
+    )
+    from browser_history import get_history
+except ImportError as e:
+    st.error(f"Missing required dependencies: {e}")
+    st.error("Please install all required packages using: pip install -r requirements.txt")
+    st.stop()
 
 
 st.set_page_config(
@@ -40,15 +46,18 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    outputs = get_history()
-    data = outputs.histories
-    
-    return generate_df(data)
+    try:
+        outputs = get_history()
+        data = outputs.histories
+        return generate_df(data)
+    except Exception as e:
+        st.error(f"Error loading browser history: {e}")
+        return None
         
 try:
     df = load_data()
-except ValueError:
-    st.error("Error loading browser history data. ")
+except Exception as e:
+    st.error(f"Error loading browser history data: {e}")
     df = None
 
 if df is not None and not df.empty:
