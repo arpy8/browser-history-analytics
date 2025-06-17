@@ -25,17 +25,17 @@ pip install -e .
 ### Option 2: Install directly
 
 ```bash
-pip install browser-history-analytics
+pip install https://github.com/arpy8/browser-history-analytics/archive/main.zip
 ```
 
 ## Usage
 Command prompt: 
 ```
-pip install browser-history-analytics && bha
+pip install https://github.com/arpy8/browser-history-analytics/archive/main.zip && bha
 ```
 Powershell: 
 ```
-pip install browser-history-analytics ; bha
+pip install https://github.com/arpy8/browser-history-analytics/archive/main.zip ; bha
 ```
 
 This will launch the web application in your default browser.
