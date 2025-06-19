@@ -1,16 +1,36 @@
-# Browser History Analytics
+<h1 align="center">
+  Browser History Analytics
+</h1>
+<p align="center">
+  A Python package that analyzes and visualizes your browser history data with interactive charts and insights.
+</p>
 
-A Python package that analyzes and visualizes your browser history data with interactive charts and insights.
+<br>
 
-## Features
+<table style="width:100%; border-collapse:collapse; font-family:sans-serif;">
+  <th>
+    Features Overview
+  </th>
+  <th>
+    Preview
+  <tr>
+    <td style="vertical-align:top; padding:10px; width:60%;">
+      <ul>
+        <li><strong>Category Analysis</strong>: Automatically categorizes websites (Social Media, Development, Entertainment, etc.)</li>
+        <li><strong>Time-based Insights</strong>: Hourly and daily browsing patterns with heatmaps</li>
+        <li><strong>Summary Statistics</strong>: Key metrics about your browsing habits</li>
+        <li><strong>Interactive Filters</strong>: Filter by date range and categories</li>
+        <li><strong>Raw Data View</strong>: Search and export your browsing data</li>
+        <li><strong>Multi-browser Support</strong>: Works with Chrome, Firefox, Safari, and more</li>
+      </ul>
+    </td>
+    <td style="vertical-align:top; padding:10px; width:40%;">
+      <img src="https://github.com/user-attachments/assets/b60be8bf-f6f3-4b1f-9d1e-311d40587b31" alt="Preview GIF" style="max-width:100%; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+    </td>
+  </tr>
+</table>
 
-- 📈 **Interactive Visualizations**: Beautiful charts showing your browsing patterns  
-- 🔍 **Category Analysis**: Automatically categorizes websites (Social Media, Development, Entertainment, etc.)  
-- ⏰ **Time-based Insights**: Hourly and daily browsing patterns with heatmaps  
-- 📊 **Summary Statistics**: Key metrics about your browsing habits  
-- 🎛️ **Interactive Filters**: Filter by date range and categories  
-- 📋 **Raw Data View**: Search and export your browsing data  
-- 🌐 **Multi-browser Support**: Works with Chrome, Firefox, Safari, and more  
+
 
 ## Installation
 
